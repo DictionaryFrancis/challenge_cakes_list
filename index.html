@@ -88,11 +88,11 @@
                     <li>
                         <div class="item-img">
                             <img src="/assets/images/image-tiramisu-desktop.jpg" alt="tiramisu">
-                            <div class="btn-cart">
+                            <div class="btn-cart" onclick="handleClick()">
                                 <img src="assets/images/icon-add-to-cart.svg" alt="cart icon">
                                 <span>Add to Cart</span>
                             </div>
-                            <div class="btn-cart-quantity">
+                            <div class="btn-cart-quantity" id="btn-cart-quantity" onclick="handleClick()">
                                 <img class="btn-decrement" src="assets/images/Add to Cart - Subtract Icon.svg"
                                     alt="minus icon">
                                 <span id="quantity-1">1</span>
@@ -109,11 +109,11 @@
                     <li>
                         <div class="item-img">
                             <img src="/assets/images/image-baklava-desktop.jpg" alt="Baklava">
-                            <div class="btn-cart">
+                            <div class="btn-cart" onclick="handleClick()">
                                 <img src="assets/images/icon-add-to-cart.svg" alt="cart icon">
                                 <span>Add to Cart</span>
                             </div>
-                            <div class="btn-cart-quantity">
+                            <div class="btn-cart-quantity" onclick="handleClick()">
                                 <img class="btn-decrement" src="assets/images/Add to Cart - Subtract Icon.svg"
                                     alt="minus icon">
                                 <span id="quantity-1">1</span>
@@ -220,13 +220,27 @@
         <aside>
             <div class="aside-container">
                 <h1>Your Cart (0)</h1>
-                <div class="empty-car">
+                <!-- <div class="empty-car">
                     <img src="assets/images/illustration-empty-cart.svg" alt="Cake icon">
                     <p>Your added items will appear here</p>
+                </div> -->
+                <div>
+                    <div>
+                        <h3 class="item-namme">Vanilla Bean Creme Brulee</h3>
+                        <div>
+                            <p class="quantities-of">4x</p>
+                            <p class="fixed-price">@ $7.00</p>
+                            <p class="total-of">$28.00</p>
+                        </div>
+                    </div>
+                    <img src="assets/images/icon-remove-item.svg" alt="remove icon">
                 </div>
             </div>
+
         </aside>
     </div>
+
+    <script src="/scripts/script_quatity.js"></script>
 
 </body>
 
