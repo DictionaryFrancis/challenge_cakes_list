@@ -1,0 +1,12 @@
+.container{
+    display: grid;
+    grid-template-columns: 65.79% 31.58%;
+    gap: 32px;
+
+    margin: 0 62px;
+    height: 100vh;
+}
+
+main{
+    overflow: auto;
+}

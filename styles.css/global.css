@@ -25,3 +25,7 @@
     --Text-Preset-4-Bold: bold 14px/150% var(--font-family);
 }
 
+body{
+    overflow: hidden;
+    margin: 88px 40px;
+}
