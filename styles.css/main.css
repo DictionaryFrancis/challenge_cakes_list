@@ -1,24 +1,125 @@
-.main-container{
+.main-container {
     display: flex;
     flex-direction: column;
-    align-items: ;
+}
+
+.main-container h1{
+    color: var(--Black);
+    font: var(--Text-Preset-1);
+    
+}
+
+.main-container ul{
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.main-container > ul:last-child{
+    margin-bottom: 88px;
+}
+
+.item-img{
+    position: relative;
+    display: inline-block;
+}
+
+.item-img>img:first-child {
+    width: 250.67px;
+    height: 240px;
+
+    border-radius: 8px;
+    object-fit: cover;
+    display: block;
+}
+
+button{
+    display: flex;
+}
+
+.btn-cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    position: absolute;
+    right: 18%;
+    bottom: -20px;
+    
+    padding: 12px 28px;
+    border-radius: 30px;
+    background: #FFFFFF;
+    border: 2px solid var(--Rose-400);
+    cursor: pointer;
+    font: var(--Text-Preset-4-Bold);
+
+}
+
+.btn-cart-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    visibility: hidden;
+    position: absolute;
+    right: 18%;
+    bottom: -20px;
+    
+    width: 160px;
+    max-width: 160px;
+    height: 44px;
+
+    color: var(--White);
+    padding: 12px;
+    border-radius: 30px;
+    background: var(--Red);
+    border: none;
+    font: var(--Text-Preset-4-Bold);
+}
+
+.btn-decrement, .btn-increment{
+    cursor: pointer;
 }
 
 
-/* Item
+.btn-cart:hover{
+    border: 2px solid var(--Red);
+    color: var(--Red);
+    
+}
 
-/* Auto layout */
-/* display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
+.btn-cart img {
+    width: 20px;
+    height: 20px;
+}
 
-width: 250.67px;
-height: 347px;
+/* Item Info */
+
+.item-info{
+    margin-top: 32px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.item-info p{
+    font: var(--Text-Preset-4);
+    color: var(--Rose-500);
+}
+
+.item-info h2{
+    font: var(--Text-Preset-3);
+    color: var(--Rose-900);
+    font-weight: bold;
+}
+
+.item-info h3{
+    font: var(--Text-Preset-3);
+    color: var(--Red);
+    font-weight: bold;
+}
 
 
-/* Inside auto layout */
-/* flex: none;
-order: 0;
-flex-grow: 1; */ 
