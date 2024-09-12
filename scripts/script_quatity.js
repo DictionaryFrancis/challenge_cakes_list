@@ -28,7 +28,6 @@ cartButtons.forEach((btn, index) => {
         }
 
 
-
         console.log(`Button clicked for item ${index + 1}`); // Logs the index of the clicked button
     });
 
@@ -47,6 +46,11 @@ cartButtons.forEach((btn, index) => {
         if (quantityValue > 1) {
             quantityValue--;
             quantities[index].textContent = quantityValue
+        } else {
+            // If it less than 1, back to show 'Add to Cart'
+            const quatityElement = document.querySelectorAll('.btn-cart-quantity')[index]
+            quatityElement.classList.remove('show')
+            cartButtons[index].style.visibility = 'visible'
         }
         console.log(`Quantity increased for item ${index + 1}: ${quantityValue}`);
     })
